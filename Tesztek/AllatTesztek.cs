@@ -241,66 +241,66 @@ namespace Tesztek
         //// Allatkert
         //// -----------------------------
 
-        //[Test]
-        //public void Allatkert_AllatFelvetele_NemDobHibat()
-        //{
-        //    Allatkert allatkert = new Allatkert();
-        //    Allat allat = new Allat("Buksi", 5, 100, 80);
+        [Test]
+        public void Allatkert_AllatFelvetele_NemDobHibat()
+        {
+            Allatkert allatkert = new Allatkert();
+            Allat allat = new Allat("Buksi", 5, 100, 80);
 
-        //    Assert.DoesNotThrow(() => allatkert.AllatFelvetele(allat));
-        //}
+            Assert.DoesNotThrow(() => allatkert.AllatFelvetele(allat));
+        }
 
-        //[Test]
-        //public void Allatkert_InformaciokListazasa_NemDobHibat()
-        //{
-        //    Allatkert allatkert = new Allatkert();
+        [Test]
+        public void Allatkert_InformaciokListazasa_NemDobHibat()
+        {
+            Allatkert allatkert = new Allatkert();
 
-        //    allatkert.AllatFelvetele(
-        //        new Allat("Buksi", 5, 100, 80));
+            allatkert.AllatFelvetele(
+                new Allat("Buksi", 5, 100, 80));
 
-        //    allatkert.AllatFelvetele(
-        //        new Madar("Csőrike", 3, 2, 70, 200));
+            allatkert.AllatFelvetele(
+                new Madar("Csőrike", 3, 2, 70, 200));
 
-        //    allatkert.AllatFelvetele(
-        //        new Ragadozo("Oroszlán", 8, 150, 60, 10));
+            allatkert.AllatFelvetele(
+                new Ragadozo("Oroszlán", 8, 150, 60, 10));
 
-        //    Assert.DoesNotThrow(() => allatkert.InformaciokListazasa());
-        //}
+            Assert.DoesNotThrow(() => allatkert.InformaciokListazasa());
+        }
 
-        //[Test]
-        //public void Allatkert_CsoportosGondozas_CsakASzuksegesAllatokatGondozza()
-        //{
-        //    Allatkert allatkert = new Allatkert();
+        [Test]
+        public void Allatkert_CsoportosGondozas_CsakASzuksegesAllatokatGondozza()
+        {
+            Allatkert allatkert = new Allatkert();
 
-        //    Allat beteg = new Allat("Buksi", 5, 100, 50);
-        //    Allat egeszseges = new Allat("Morzsi", 5, 100, 80);
+            Allat beteg = new Allat("Buksi", 5, 100, 50);
+            Allat egeszseges = new Allat("Morzsi", 5, 100, 80);
 
-        //    allatkert.AllatFelvetele(beteg);
-        //    allatkert.AllatFelvetele(egeszseges);
+            allatkert.AllatFelvetele(beteg);
+            allatkert.AllatFelvetele(egeszseges);
 
-        //    allatkert.CsoportosGondozas(31);
+            allatkert.CsoportosGondozas(31);
 
-        //    Assert.That(beteg.Testsuly, Is.EqualTo(102));
-        //    Assert.That(beteg.Egeszseg, Is.EqualTo(65));
+            Assert.That(beteg.Testsuly, Is.EqualTo(102));
+            Assert.That(beteg.Egeszseg, Is.EqualTo(65));
 
-        //    Assert.That(egeszseges.Testsuly, Is.EqualTo(100));
-        //    Assert.That(egeszseges.Egeszseg, Is.EqualTo(80));
-        //}
+            Assert.That(egeszseges.Testsuly, Is.EqualTo(100));
+            Assert.That(egeszseges.Egeszseg, Is.EqualTo(80));
+        }
 
-        //[Test]
-        //public void Allatkert_CsoportosGondozas_LezarmazottSajatMetodusatHasznalja()
-        //{
-        //    Allatkert allatkert = new Allatkert();
+        [Test]
+        public void Allatkert_CsoportosGondozas_LezarmazottSajatMetodusatHasznalja()
+        {
+            Allatkert allatkert = new Allatkert();
 
-        //    Madar madar = new Madar("Csőrike", 5, 2, 50, 200);
+            Madar madar = new Madar("Csőrike", 5, 2, 50, 200);
 
-        //    allatkert.AllatFelvetele(madar);
+            allatkert.AllatFelvetele(madar);
 
-        //    allatkert.CsoportosGondozas(31);
+            allatkert.CsoportosGondozas(31);
 
-        //    Assert.That(madar.Testsuly, Is.EqualTo(4));
-        //    Assert.That(madar.Egeszseg, Is.EqualTo(65));
-        //    Assert.That(madar.RepulesiMagassag, Is.EqualTo(300));
-        //}
+            Assert.That(madar.Testsuly, Is.EqualTo(4));
+            Assert.That(madar.Egeszseg, Is.EqualTo(65));
+            Assert.That(madar.RepulesiMagassag, Is.EqualTo(300));
+        }
     }
 }
