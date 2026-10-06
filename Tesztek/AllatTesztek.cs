@@ -171,70 +171,70 @@ namespace Tesztek
         //// Ragadozo
         //// -----------------------------
 
-        //[Test]
-        //public void Ragadozo_TaplalekMennyiseg_AlsoHatar()
-        //{
-        //    Ragadozo ragadozo = new Ragadozo("Oroszlán", 8, 150, 80, -5);
+        [Test]
+        public void Ragadozo_TaplalekMennyiseg_AlsoHatar()
+        {
+            Ragadozo ragadozo = new Ragadozo("Oroszlán", 8, 150, 80, -5);
 
-        //    Assert.That(ragadozo.TaplalekMennyiseg, Is.EqualTo(0));
-        //}
+            Assert.That(ragadozo.TaplalekMennyiseg, Is.EqualTo(0));
+        }
 
-        //[Test]
-        //public void Ragadozo_TaplalekMennyiseg_FelsoHatar()
-        //{
-        //    Ragadozo ragadozo = new Ragadozo("Oroszlán", 8, 150, 80, 20);
+        [Test]
+        public void Ragadozo_TaplalekMennyiseg_FelsoHatar()
+        {
+            Ragadozo ragadozo = new Ragadozo("Oroszlán", 8, 150, 80, 20);
 
-        //    Assert.That(ragadozo.TaplalekMennyiseg, Is.EqualTo(10));
-        //}
+            Assert.That(ragadozo.TaplalekMennyiseg, Is.EqualTo(10));
+        }
 
-        //[Test]
-        //public void Ragadozo_Gondozas_CsokkentiATaplalekot()
-        //{
-        //    Ragadozo ragadozo = new Ragadozo("Oroszlán", 8, 150, 50, 10);
+        [Test]
+        public void Ragadozo_Gondozas_CsokkentiATaplalekot()
+        {
+            Ragadozo ragadozo = new Ragadozo("Oroszlán", 8, 150, 50, 10);
 
-        //    ragadozo.Gondoz(30);
+            ragadozo.Gondoz(30);
 
-        //    Assert.That(ragadozo.TaplalekMennyiseg, Is.EqualTo(5));
-        //}
+            Assert.That(ragadozo.TaplalekMennyiseg, Is.EqualTo(5));
+        }
 
-        //[Test]
-        //public void Ragadozo_Gondozas_TaplalekNemLehetNegativ()
-        //{
-        //    Ragadozo ragadozo = new Ragadozo("Oroszlán", 8, 150, 50, 2);
+        [Test]
+        public void Ragadozo_Gondozas_TaplalekNemLehetNegativ()
+        {
+            Ragadozo ragadozo = new Ragadozo("Oroszlán", 8, 150, 50, 2);
 
-        //    ragadozo.Gondoz(30);
+            ragadozo.Gondoz(30);
 
-        //    Assert.That(ragadozo.TaplalekMennyiseg, Is.EqualTo(0));
-        //}
+            Assert.That(ragadozo.TaplalekMennyiseg, Is.EqualTo(0));
+        }
 
-        //[Test]
-        //public void Ragadozo_Gondozas_MeghivjaAzOsosztalyMetodusat()
-        //{
-        //    Ragadozo ragadozo = new Ragadozo("Oroszlán", 8, 150, 50, 10);
+        [Test]
+        public void Ragadozo_Gondozas_MeghivjaAzOsosztalyMetodusat()
+        {
+            Ragadozo ragadozo = new Ragadozo("Oroszlán", 8, 150, 50, 10);
 
-        //    ragadozo.Gondoz(31);
+            ragadozo.Gondoz(31);
 
-        //    Assert.That(ragadozo.Testsuly, Is.EqualTo(152));
-        //    Assert.That(ragadozo.Egeszseg, Is.EqualTo(65));
-        //    Assert.That(ragadozo.TaplalekMennyiseg, Is.EqualTo(5));
-        //}
+            Assert.That(ragadozo.Testsuly, Is.EqualTo(152));
+            Assert.That(ragadozo.Egeszseg, Is.EqualTo(65));
+            Assert.That(ragadozo.TaplalekMennyiseg, Is.EqualTo(5));
+        }
 
 
         //// -----------------------------
         //// Polimorfizmus
         //// -----------------------------
 
-        //[Test]
-        //public void LeszarmazottAllat_JarmuSajatGondozasatHasznalja()
-        //{
-        //    Allat allat = new Madar("Csőrike", 5, 2, 50, 200);
+        [Test]
+        public void LeszarmazottAllat_JarmuSajatGondozasatHasznalja()
+        {
+            Allat allat = new Madar("Csőrike", 5, 2, 50, 200);
 
-        //    allat.Gondoz(31);
+            allat.Gondoz(31);
 
-        //    Assert.That(allat.Testsuly, Is.EqualTo(4));
-        //    Assert.That(allat.Egeszseg, Is.EqualTo(65));
-        //    Assert.That(((Madar)allat).RepulesiMagassag, Is.EqualTo(300));
-        //}
+            Assert.That(allat.Testsuly, Is.EqualTo(4));
+            Assert.That(allat.Egeszseg, Is.EqualTo(65));
+            Assert.That(((Madar)allat).RepulesiMagassag, Is.EqualTo(300));
+        }
 
 
         //// -----------------------------

@@ -28,7 +28,7 @@ namespace Program
         public override void Gondoz(int ido)
         {
             base.Gondoz(ido);
-            repulesiMagassag += 100;
+            RepulesiMagassag += 100;
         }
     }
 }

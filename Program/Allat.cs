@@ -59,7 +59,7 @@ namespace Program
                 egeszseg = Math.Clamp(value, 0, 100);
                 if (51 > egeszseg)
                 {
-                    gondozasSzukseges = true;
+                    GondozasSzukseges = true;
                 }
             } 
         }
@@ -74,12 +74,12 @@ namespace Program
         {
             if (ido > 30)
             {
-                testsuly += 2;
+                Testsuly += 2;
             }
-            egeszseg += 15;
-            if (50 > egeszseg)
+            Egeszseg += 15;
+            if (50 > Egeszseg)
             {
-                egeszseg = 50;
+                Egeszseg = 50;
             }
         }
     }
