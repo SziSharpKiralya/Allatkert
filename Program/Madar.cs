@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Program
 {
-    public class Madar : Allat
-    {
+    //public class Madar : Allat
+    //{
 
-    }
+    //}
 }
