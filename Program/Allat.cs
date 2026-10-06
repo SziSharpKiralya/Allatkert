@@ -65,12 +65,12 @@ namespace Program
         }
         public bool GondozasSzukseges { get => gondozasSzukseges; set => gondozasSzukseges = value; }
 
-        public void InformaciotAd()
+        public virtual void InformaciotAd()
         {
             Console.WriteLine($"[{Nev}] - [{Kor}] éves állat, [{Testsuly}] kg súllyal");
         }
 
-        public void Gondoz(int ido)
+        public virtual void Gondoz(int ido)
         {
             if (ido > 30)
             {

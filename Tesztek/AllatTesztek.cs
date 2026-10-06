@@ -129,42 +129,42 @@ namespace Tesztek
         // Madar
         // -----------------------------
 
-        //[Test]
-        //public void Madar_RepulesiMagassag_AlsoHatar()
-        //{
-        //    Madar madar = new Madar("Csőrike", 5, 2, 80, 1);
+        [Test]
+        public void Madar_RepulesiMagassag_AlsoHatar()
+        {
+            Madar madar = new Madar("Csőrike", 5, 2, 80, 1);
 
-        //    Assert.That(madar.RepulesiMagassag, Is.EqualTo(5));
-        //}
+            Assert.That(madar.RepulesiMagassag, Is.EqualTo(5));
+        }
 
-        //[Test]
-        //public void Madar_RepulesiMagassag_FelsoHatar()
-        //{
-        //    Madar madar = new Madar("Csőrike", 5, 2, 80, 600);
+        [Test]
+        public void Madar_RepulesiMagassag_FelsoHatar()
+        {
+            Madar madar = new Madar("Csőrike", 5, 2, 80, 600);
 
-        //    Assert.That(madar.RepulesiMagassag, Is.EqualTo(500));
-        //}
+            Assert.That(madar.RepulesiMagassag, Is.EqualTo(500));
+        }
 
-        //[Test]
-        //public void Madar_Gondozas_NoveliARepulesiMagassagot()
-        //{
-        //    Madar madar = new Madar("Csőrike", 5, 2, 80, 200);
+        [Test]
+        public void Madar_Gondozas_NoveliARepulesiMagassagot()
+        {
+            Madar madar = new Madar("Csőrike", 5, 2, 80, 200);
 
-        //    madar.Gondoz(30);
+            madar.Gondoz(30);
 
-        //    Assert.That(madar.RepulesiMagassag, Is.EqualTo(300));
-        //}
+            Assert.That(madar.RepulesiMagassag, Is.EqualTo(300));
+        }
 
-        //[Test]
-        //public void Madar_Gondozas_MeghivjaAzOsosztalyMetodusat()
-        //{
-        //    Madar madar = new Madar("Csőrike", 5, 2, 50, 200);
+        [Test]
+        public void Madar_Gondozas_MeghivjaAzOsosztalyMetodusat()
+        {
+            Madar madar = new Madar("Csőrike", 5, 2, 50, 200);
 
-        //    madar.Gondoz(31);
+            madar.Gondoz(31);
 
-        //    Assert.That(madar.Testsuly, Is.EqualTo(4));
-        //    Assert.That(madar.Egeszseg, Is.EqualTo(65));
-        //}
+            Assert.That(madar.Testsuly, Is.EqualTo(4));
+            Assert.That(madar.Egeszseg, Is.EqualTo(65));
+        }
 
 
         //// -----------------------------
